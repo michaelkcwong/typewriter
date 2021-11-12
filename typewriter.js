@@ -3,12 +3,12 @@
 const sentence = "hello there from lighthouse labs";
 let time = 0;
 
-for (const char of sentence) {
-  setTimeout(() => {
+for (const char of sentence) { //looping through each character 
+  setTimeout(() => { //delay the characters
   process.stdout.write(char)
 }, time)
-time = time + 50;
+time = time + 50; //delaying each character 50ms apart
 };
 setTimeout(() => {
-  process.stdout.write("\n")
+  process.stdout.write("\n") //output a newline character before exiting, so that the next prompt starts on its own line
 }, time);
